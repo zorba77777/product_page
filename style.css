@@ -1,0 +1,522 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    width: 1280px;
+    font-family: Arial, sans-serif;
+    margin: 0 auto;
+}
+
+/* -------------------- НАЧАЛО стилей для header --------------------- */
+
+header {
+    background-color: #455164;
+    color: white;
+    overflow: hidden;
+}
+
+.headDescription {
+    float: left;
+    margin: 3%;
+    width: 50%;
+    font-size: 150%;
+    font-family: Arial, sans-serif;
+}
+
+.headDescription ol {
+    list-style: none;
+    margin-top: 5%;
+}
+
+.headDescription ol > li {
+    position: relative;
+    padding: 1% 0 0 5%;
+}
+
+.headDescription ol > li:hover {
+    position: relative;
+    padding: 1% 0 0 5%;
+    color:gray;
+}
+
+.headDescription ol > li:before {
+    content: '✓';
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: white;
+    font-weight: 900;
+    font-size: 150%;
+}
+
+.headImage {
+    width: 31%;
+    float: right;
+    margin: 4% 4% 0 0;
+}
+
+.headImage img {
+    height: 100%;
+    width: 100%;
+}
+
+/* ----------------- КОНЕЦ стилей для header ---------------------- */
+
+/* ------------------ НАЧАЛО стилей для section about ---------------------- */
+
+.about {
+    color: #455164;
+    overflow: hidden;
+}
+
+.aboutDescription {
+    float: left;
+    margin: 3%;
+    width: 55%;
+    font-size: 150%;
+    font-family: Arial, sans-serif;
+}
+
+.aboutDescription p {
+    padding-top: 2%;
+    font-size: 70%;
+}
+
+.aboutDescription h3 {
+    padding-bottom: 2%;
+    font-weight: normal;
+}
+
+.aboutImage {
+    width: 30%;
+    float: right;
+    margin: 4% 4% 4% 0;
+}
+
+.aboutImage img {
+    height: 100%;
+    width: 100%;
+}
+
+.about video {
+    margin-top: -65%;
+    margin-left: 9%;
+    float: left;
+}
+
+/* ----------------- КОНЕЦ стилей для section about ---------------------- */
+
+/* ------------------ НАЧАЛО стилей для section pluses ---------------------- */
+
+.pluses {
+    background-color: #F5F5F5;
+    font-family: Arial, sans-serif;
+}
+
+.plusesContent {
+    column-count: 2;
+    margin: 0 3% 3% 3%;
+}
+
+.pluses h3 {
+    text-align: center;
+    padding: 2% 0 2% 0;
+    font-size: 200%;
+    color: #455164;
+    font-weight: normal;
+}
+
+.pluses details {
+    padding: 2% 0 2% 0;
+
+}
+
+.pluses summary {
+    font: normal normal 100%/150% Arial, sans-serif;
+    outline: none;
+}
+
+.pluses summary::-webkit-details-marker {
+    display: none
+}
+
+.pluses summary:before {
+    content: "+";
+}
+
+.pluses details[open] summary:before {
+    content: "-";
+}
+
+.pluses summary:before, #pluses details[open] summary:before {
+    background: #455164;
+    color: #fff;
+    float: left;
+    font-size: 200%;
+    font-weight: 900;
+    margin-right: 2.5%;
+    text-align: center;
+    width: 6.5%;
+    padding: 1.3% 0 1.3% 0;
+    font-family: Arial, sans-serif;
+}
+
+.pluses summary:hover:before, #pluses details[open] summary:hover:before {
+    color: aliceblue;
+    background-color: gray;
+}
+
+/* ----------------- КОНЕЦ стилей для section pluses ---------------------- */
+
+/* ------------------ НАЧАЛО стилей для section screenshots ---------------------- */
+
+.screenshots {
+    color: #455164;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+}
+
+.screenshots h3 {
+    text-align: center;
+    padding: 2% 0 2% 0;
+    font-size: 200%;
+    color: #455164;
+    font-weight: normal;
+}
+
+.screenshotsContent {
+    column-count: 2;
+    margin: 0 3% 0 3%;
+    text-align: left;
+}
+
+.screenshotsContent figure {
+    width: 100%;
+    overflow: hidden;
+    padding: 0 0 3% 0;
+}
+
+.screenshotsContent figure img {
+    width: 30%;
+    float: left;
+    margin: 0 1.3% 0 0;
+}
+
+.screenshotsContent figure img:hover {
+    width: 30%;
+    float: left;
+    margin: 0 1.3% 0 0;
+    opacity: 0.5;
+}
+
+.screenshotsContent figure figcaption {
+    display: inline;
+}
+
+.screenshotsContent figure figcaption h4 {
+    padding: 0 0 2% 0;
+    font-size: 160%;
+    color: #455164;
+    font-weight: normal;
+}
+
+.screenshotsContent figure figcaption p {
+    font-size: 120%;
+    color: black;
+}
+
+/* ----------------- КОНЕЦ стилей для section screenshots ---------------------- */
+
+/* ------------------ НАЧАЛО стилей для section reviews ---------------------- */
+
+.reviewS {
+    background-color: #F5F5F5;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+}
+
+.reviewS h3 {
+    text-align: center;
+    padding: 2% 0 2% 0;
+    font-size: 200%;
+    color: #455164;
+    font-weight: normal;
+}
+
+.reviewsContent {
+    column-count: 2;
+    margin: 0 3% 0 3%;
+    text-align: left;
+    overflow: hidden;
+}
+
+.review {
+    margin: 0 3% 0 3%;
+    overflow: hidden;
+    padding: 0 0 3% 0;
+}
+
+.review img {
+    border-radius: 50%;
+    float: left;
+    margin: 1%;
+    width: 13%;
+    border: 0.2em solid #F5F5F5;
+}
+
+.review img:hover {
+    border-color: black;
+    opacity: 0.5;
+}
+
+.reviewText {
+    font-style: italic;
+    color: black;
+    float: right;
+    width: 80%;
+    background-color: #EAEAEB;
+}
+
+.reviewText::before {
+    content: '';
+    float: left;
+    border: 0.7em solid transparent;
+    border-right: 0.7em solid #EAEAEB;
+    margin-left: -5%;
+    margin-top: 5%;
+}
+
+.reviewText p {
+    margin: 3%;
+}
+
+.signature {
+    color: gray;
+    font-style: normal;
+}
+
+/* ----------------- КОНЕЦ стилей для section reviews ---------------------- */
+
+/* ------------------ НАЧАЛО стилей для section buyItNow ---------------------- */
+
+.buyItNow {
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+    width: 100%;
+    padding-bottom: 4%;
+}
+
+.buyItNow > h3 {
+    text-align: center;
+    padding: 2% 0 2% 0;
+    font-size: 200%;
+    color: #455164;
+    font-weight: normal;
+}
+
+.flexible {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+}
+
+.standard, .premium, .lux {
+    background-color: #455164;
+    color: white;
+    /*float: left;*/
+    width: 23%;
+    padding: 5px;
+    /*margin-right: 4%;*/
+    text-align: center;
+}
+
+.standard ol, .premium ol, .lux ol {
+    text-align: left;
+    margin: 5% 0 5% 10%;
+    font-size: 95%;
+    line-height: 150%;
+}
+
+.standard h3, .premium h3, .lux h3 {
+    text-align: center;
+    padding: 2% 0 2% 0;
+    font-size: 150%;
+    font-weight: normal;
+}
+
+.standard h2, .premium h2, .lux h2 {
+    text-align: center;
+    padding: 3% 0 3% 0;
+    font-size: 250%;
+    font-weight: normal;
+    background-color: white;
+    color: #455164;
+}
+
+.standard input, .premium input, .lux input {
+    background-color: white;
+    border: 1px solid white;
+    color: #455164;
+    padding: 3% 40% 3% 40%;
+    font-size: 110%;
+    cursor: pointer;
+    border-radius: 5%;
+    font-weight: bold;
+    margin-bottom: 3%;
+    outline: none;
+}
+
+.standard input:hover, .premium input:hover, .lux input:hover {
+    background-color: gray;
+    border: 1px solid black;
+    color: black;
+    box-shadow: 0.05em 0.05em 0.05em black;
+    outline: none;
+}
+
+.standard input:active, .premium input:active, .lux input:active {
+    background-color: dimgray;
+    box-shadow: none;
+    border: 1px solid dimgray;
+    color:gray;
+    outline: none;
+}
+
+.standard {
+    margin-left: 10%;
+}
+
+.lux {
+    margin-right: 10%;
+}
+
+/* ------------------ КОНЕЦ стилей для section buyItNow ---------------------- */
+
+/* ------------------ НАЧАЛО стилей для footer ---------------------- */
+
+footer {
+    background-color: #455164;
+    color: white;
+    overflow: hidden;
+}
+
+footer h3 {
+    text-align: center;
+    padding: 5% 0 2% 0;
+    font-size: 200%;
+    font-weight: normal;
+}
+
+.send {
+    width: 60%;
+    float: left;
+    margin-right: 2.5%;
+}
+
+.send input[type="text"], .send input[type="email"], .send textarea {
+    display: block;
+    margin-left: 30%;
+    margin-bottom: 2.5%;
+    width: 65%;
+    padding: 1.5%;
+    border-radius: 3%;
+}
+
+.send textarea {
+    height: 12em;
+    text-transform: capitalize;
+}
+
+.send input[type="text"] {
+    text-transform: capitalize;
+}
+
+.send input[type="submit"] {
+    background-color: white;
+    border: 1px solid white;
+    color: #455164;
+    padding: 1.5% 6.5% 1.5% 6.5%;
+    font-size: 100%;
+    cursor: pointer;
+    border-radius: 5%;
+    font-weight: bold;
+    margin-bottom: 6%;
+    margin-left: 53%;
+    outline: none;
+}
+
+.send input[type="submit"]:hover {
+    background-color: gray;
+    border: 1px solid black;
+    color: black;
+    box-shadow: 0.05em 0.05em 0.05em black;
+    outline: none;
+}
+
+.send input[type="submit"]:active {
+    outline: none;
+    color: white;
+    background-color: black;
+}
+
+::-webkit-input-placeholder {
+    color: #455164;
+    font-size: 120%;
+}
+
+::-moz-placeholder {
+    color: #455164;
+    font-size: 120%;
+}
+
+/* Firefox 19+ */
+:-moz-placeholder {
+    color: #455164;
+    font-size: 120%;
+}
+
+/* Firefox 18- */
+:-ms-input-placeholder {
+    color: #455164;
+    font-size: 120%;
+}
+
+.logo {
+    width: 37.5%;
+    float: left;
+    text-align: left;
+    margin-top: -1.5%;
+}
+
+.contacts img {
+    float: left;
+    margin-right: 0.5%;
+    margin-top: -1.3%;
+}
+
+.contacts p {
+    margin-top: 5.5%;
+}
+
+.contacts p:hover {
+    color: gray;
+}
+
+.socialNetwork {
+    margin-top: 5%;
+}
+
+.finish {
+    background-color: white;
+    color:  #455164;
+    overflow: hidden;
+    clear: both;
+    text-align: center;
+    font-size: 80%;
+    padding: 0.5% 0 0.5% 0;
+}
+
+/* ------------------ КОНЕЦ стилей для footer ---------------------- */
